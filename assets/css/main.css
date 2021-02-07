@@ -231,8 +231,8 @@ body {
   .contactDiv {
 	content: "Hi";
 	position: absolute;
-	bottom: -15px;
-	right: -20px;
+	bottom: 0px;
+	right: -35px;
 	background: #50505a;
 	color: #fff;
 	width: 320px;
