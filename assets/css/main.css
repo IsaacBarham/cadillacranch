@@ -239,7 +239,7 @@ body {
 	background: #50505a;
 	color: #fff;
 	width: 320px;
-	padding: 16px 4px 16px 0;
+	padding: 4px 4px 4px 4px;
 	border-radius: 6px;
 	font-size: 13px;
   }
@@ -768,7 +768,7 @@ input, select, textarea {
 			}
 
 				#main .item.intro h1 {
-					font-size: 3em;
+					font-size: 2em;
 					line-height: 1em;
 				}
 
