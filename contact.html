@@ -1,92 +1,76 @@
 <!DOCTYPE HTML>
-<!--
-	Parallelism by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
--->
 <html>
 
 <head>
-    <title>The Cadillac Ranch</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" />
-    </noscript>
-
+	<title>The Cadillac Ranch</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 </head>
 
 <body class="is-preload">
-    <nav role="navigation" style="position: fixed; z-index: 105010; padding-bottom: 1em;">
-        <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-                <a href="about.html">
-                    <li>About</li>
-                </a>
-                <a href="packages.html">
-                    <li>Packages</li>
-                </a>
-                <a href="contact.html">
-                    <li>Contact</li>
-                </a>
-            </ul>
-        </div>
-    </nav>
-    <div id="wrapper">
-        <section id="main" style="padding-top: 100px;">
-            <div class="items">
-                <div class="item span-10">
-
-                    <div class="contactcontainer">
-                        <form action="/action_page.php" style="float: left; margin: 20px; width: 50%">
-
-                            <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name">
-                            <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name">
-                            <label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Tell us how we can better assist you..."
-                                style="height:200px"></textarea>
-                            <input type="submit" value="Submit">
-                        </form>
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12873.424185667836!2d-79.477269!3d36.230844!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8852d6acb6b2fe27%3A0xe43d6399293d8273!2s6330%20David%20Moore%20Rd%2C%20Elon%2C%20NC%2027244!5e0!3m2!1sen!2sus!4v1612653122608!5m2!1sen!2sus"
-                            height="500px" frameborder="0" style="border:0; float: left; width: 45%" allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe>
-                    </div>
-                </div>
-        </section>
-        <section id="footer">
-            <section>
-                <p>The Cadillac Ranch is a beautiful estate laid out on 62 pristine and luscious acres accompanied with
-                    2 ponds that make the perfect back drop for any themed wedding.</p>
-            </section>
-            <section>
-                <ul class="icons">
-                    <li><a href="https://www.facebook.com/cadillacranchvenue" class="icon brands fa-facebook-f"
-                            target="_blank" rel="noopener noreferrer"><span class="label">Facebook</span></a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>&copy; The Cadillac Ranch</li>
-                </ul>
-            </section>
-        </section>
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.poptrox.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/about.js"></script>
+	<nav role="navigation" style="position: fixed; z-index: 105010; padding-bottom: 1em;">
+		<div id="menuToggle">
+			<input type="checkbox" />
+			<span></span>
+			<span></span>
+			<span></span>
+			<ul id="menu">
+				<a href="index.html">
+					<li>Home</li>
+				</a>
+				<a href="about.html">
+					<li>About</li>
+				</a>
+				<a href="packages.html">
+					<li>Packages</li>
+				</a>
+				<a href="contact.html">
+					<li>Contact</li>
+				</a>
+			</ul>
+		</div>
+	</nav>
+	<div id="wrapper">
+		<section id="main">
+			<div>
+                    <form class="form">
+                        <h2 style="color: black; font-weight: bolder; border-bottom: 3px solid #78788c;">CONTACT US</h2>
+                        <p class="pform" type="Name:"><input placeholder="Write your name here..."></input></p>
+                        <p class="pform" type="Email:"><input placeholder="Let us know how to contact you back..."></input></p>
+                        <p class="pform" type="Message:"><input placeholder="What would you like to tell us..."></input></p>
+                        <button>Send Message</button>
+                        <div class="contactDiv">
+                          <span class="fa fa-phone"></span>001 1023 567
+                          <span class="fa fa-envelope-o"></span> contact@company.com
+                        </div>
+                      </form>
+            </div>
+		</section>
+		<section id="footer">
+			<section>
+				<p>The Cadillac Ranch is a beautiful estate laid out on 62 pristine and luscious acres accompanied with
+					2 ponds that make the perfect back drop for any themed wedding.</p>
+			</section>
+			<section>
+				<ul class="icons">
+					<li><a href="https://www.facebook.com/cadillacranchvenue" class="icon brands fa-facebook-f" target="_blank" rel="noopener noreferrer"><span class="label">Facebook</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; The Cadillac Ranch</li>
+				</ul>
+			</section>
+		</section>
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.poptrox.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/about.js"></script>
 </body>
 
 </html>
