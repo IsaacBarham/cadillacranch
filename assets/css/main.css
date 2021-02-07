@@ -663,8 +663,19 @@ input, select, textarea {
 			display: flex;
 		}
 
+		#main .itemsContact {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+		}
+
 			#main .items > :last-child {
 				border-right: solid 10px #ffffff;
+			}
+
+			#main .itemsContact > :last-child {
+				border-right: solid 0px transparent;
 			}
 
 		#main .item {
