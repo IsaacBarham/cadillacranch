@@ -403,7 +403,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body {
-				background-attachment: scroll;
+				background-attachment: fixed;
 			}
 
 		}
@@ -411,7 +411,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			body {
-				background-attachment: scroll;
+				background-attachment: fixed;
 				background-size: auto, 100% 100%, 250% auto;
 				background-repeat: repeat, no-repeat, no-repeat;
 				background-position: top left, bottom left, 50% 0%;
@@ -581,6 +581,8 @@ input, select, textarea {
 		-ms-transition: -ms-filter 0.5s ease-in-out;
 		transition: filter 0.5s ease-in-out;
 	}
+
+	
 
 		#wrapper:before {
 			content: '';
