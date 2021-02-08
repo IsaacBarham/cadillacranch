@@ -11,9 +11,10 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	
 </head>
 
-<body class="is-preload">
+<body class="is-preload" onload="onPageLoad()">
 	<nav role="navigation" style="position: sticky; z-index: 105010; padding-bottom: 1em;">
 		<div id="menuToggle">
 			<input type="checkbox" />
@@ -33,6 +34,12 @@
 				<a href="contact.html">
 					<li>Contact</li>
 				</a>
+				<a href="media.html">
+					<li>Media</li>
+				</a>
+				<a href="gallery.html">
+					<li>Gallery</li>
+				</a>
 			</ul>
 		</div>
 	</nav>
@@ -40,7 +47,8 @@
 		<section id="main">
 			<div class="items">
 				<div class="item span-10">
-					<p class="weddingHeader" style="text-align: center; font-size: 72; margin-top: 25px; margin-bottom: 25px;">Wedding Packages
+					<p class="weddingHeader"
+						style="text-align: center; font-size: 72; margin-top: 25px; margin-bottom: 25px;">Packages
 					</p>
 					<div class="container">
 						<div class="row">
@@ -49,13 +57,12 @@
 
 							</div>
 							<div class="col">
-								Our goal at The Cadillac Ranch is to give you the best experience possible on what is to
-								be the most important day of your life.
+								Our goal at The Cadillac Ranch is to provide an amazing venue and unforgettable experience.
 								From the moment we speak to you, til the last guest leaves, we will go the extra mile to
-								ensure that you don't have to worry in the days leading up to you walking down the isle.
+								ensure that you don't have to worry about sweating the small things or making sure everything is set.
 								Should you have any questions about our packages, or our pricing, please don't hestitate
 								to <a href="contact.html" style="color: tan;">contact us</a> or reach out to us at
-								336-867-5309
+								336-264-6610
 								<br />
 								<br />
 								<p style="text-align: center; font-style: italic; font-size: large;">Scroll down to see
@@ -65,32 +72,53 @@
 						</div>
 					</div>
 					<hr>
-					<div class="container">
-						<p style="text-align: center; font-size: x-large; letter-spacing: 3px;">Guest Count</p>
-						<p style="text-align: center; margin: 3px;">Our venue is able to support a variety of guest counts for different packages</p>
-						<p style="text-align: center; margin: 3px;">Pacakges avaialable for guest counts below:</p>
-						<p style="text-align: center; margin: 3px;">• Up to 100</p>
-						<p style="text-align: center; margin: 3px;">• 101 - 175 guests</p>
-						<p style="text-align: center; margin: 3px;">• 176-225 guests</p>
-						<p style="text-align: center; margin: 3px;">All packages have the following items included <a href="#included_items" style="color: tan;">these items</a></p>
-					</div>
-					<hr>
-					<div class="container">
-						<p style="text-align: center; font-size: x-large; letter-spacing: 3px;">Elopement Package</p>
-						<p style="text-align: center; margin: 3px;">Our elopement package is focused on intimate
-							ceremonies and are limited to 50 guests. </p>
-						<p style="text-align: center; margin: 3px;">Must be booked the month of the wedding, and can
-							only be booked Monday through Thursday.</p>
-						<p style="text-align: center; margin: 3px;">Includes:</p>
-						<p style="text-align: center; margin: 3px;">• Chairs for Guests</p>
-						<p style="text-align: center; margin: 3px;">• Tables for Guests</p>
-						<p style="text-align: center; margin: 3px;">• Access to event venue for 5 hours</p>
-					</div>
-					<hr>
-					<div class="container" id="included_items">
-						<p style="text-align: center; font-size: x-large; letter-spacing: 3px; margin: 3px;">All Packages Include</p>
-						
-							<p style="text-align: center; margin: 3px;">• Two hours of rehearsal the day prior (subject to availability)</p>
+					<div class="container" style="overflow-x: hidden;">
+					<ul class="segmented-control">
+						<li class="segmented-control__item">
+							<input class="segmented-control__input" type="radio" value="1" name="option" id="wedding"
+								onclick="yesnoCheck();" checked>
+							<label class="segmented-control__label" for="wedding">Wedding Packages</label>
+						</li>
+						<li class="segmented-control__item">
+							<input class="segmented-control__input" type="radio" value="2" name="option" id="option-2" onclick="yesnoCheck()">
+							<label class="segmented-control__label" for="option-2">Additional Packages</label>
+						</li>
+					</ul>
+				</div>
+					<div class="container" id="weddingpackage" style="visibility: hidden;">
+						<div class="container">
+
+							<p style="text-align: center; font-size: x-large; letter-spacing: 3px;">Guest Count</p>
+							<p style="text-align: center; margin: 3px;">Our venue is able to support a variety of guest
+								counts for different packages</p>
+							<p style="text-align: center; margin: 3px;">Pacakges avaialable for guest counts below:</p>
+							<p style="text-align: center; margin: 3px;">• Up to 100</p>
+							<p style="text-align: center; margin: 3px;">• 101 - 175 guests</p>
+							<p style="text-align: center; margin: 3px;">• 176-225 guests</p>
+							<p style="text-align: center; margin: 3px;">All packages have the following items included
+								<a href="#included_items" style="color: tan;">these items</a>
+							</p>
+						</div>
+						<hr>
+						<div class="container">
+							<p style="text-align: center; font-size: x-large; letter-spacing: 3px;">Elopement Package
+							</p>
+							<p style="text-align: center; margin: 3px;">Our elopement package is focused on intimate
+								ceremonies and are limited to 50 guests. </p>
+							<p style="text-align: center; margin: 3px;">Must be booked the month of the wedding, and can
+								only be booked Monday through Thursday.</p>
+							<p style="text-align: center; margin: 3px;">Includes:</p>
+							<p style="text-align: center; margin: 3px;">• Chairs for Guests</p>
+							<p style="text-align: center; margin: 3px;">• Tables for Guests</p>
+							<p style="text-align: center; margin: 3px;">• Access to event venue for 5 hours</p>
+						</div>
+						<hr>
+						<div class="container" id="included_items">
+							<p style="text-align: center; font-size: x-large; letter-spacing: 3px; margin: 3px;">All
+								Packages Include</p>
+
+							<p style="text-align: center; margin: 3px;">• Two hours of rehearsal the day prior (subject
+								to availability)</p>
 							<p style="text-align: center; margin: 3px;">• (25) 60'' Round Tables</p>
 							<p style="text-align: center; margin: 3px;">• (10) 72'' Rectangle Tables</p>
 							<p style="text-align: center; margin: 3px;">• (400) White Folding Chairs</p>
@@ -98,30 +126,38 @@
 							<p style="text-align: center; margin: 3px;">• Central Air and Heating</p>
 							<p style="text-align: center; margin: 3px;">• Wireless Internet</p>
 							<p style="text-align: center; margin: 3px;">• Hanging String Lights</p>
-							<p style="text-align: center; margin: 3px;">• Catering Prep Area with Food Warmers (Rental Fee Applies for Food Warmers)</p>
+							<p style="text-align: center; margin: 3px;">• Catering Prep Area with Food Warmers (Rental
+								Fee Applies for Food Warmers)</p>
 							<p style="text-align: center; margin: 3px;">• Stationary Bar</p>
 							<p style="text-align: center; margin: 3px;">• Industrial Size Ice Maker</p>
-							<p style="text-align: center; margin: 3px;">• Surround Sound Speakers with Wireless Mic and Auxiliary Cord Hookup (Additional fee; Not in lieu of DJ Service)</p>
+							<p style="text-align: center; margin: 3px;">• Surround Sound Speakers with Wireless Mic and
+								Auxiliary Cord Hookup (Additional fee; Not in lieu of DJ Service)</p>
 							<p style="text-align: center; margin: 3px;">• Custom Bridal Suite</p>
 							<p style="text-align: center; margin: 3px;">• Groosmen Quarters</p>
-							<p style="text-align: center; margin: 3px;">• On-site Accomodations (Additional Fee Applies)</p>
+							<p style="text-align: center; margin: 3px;">• On-site Accomodations (Additional Fee Applies)
+							</p>
 							<p style="text-align: center; margin: 3px;">• Patio Area with Wood Burning Fire Pit</p>
 							<p style="text-align: center; margin: 3px;">• Parking Attendant</p>
-							<p style="text-align: center; margin: 3px;">• Multiple Golf Carts for Guests Needing Additional Assistance</p>
+							<p style="text-align: center; margin: 3px;">• Multiple Golf Carts for Guests Needing
+								Additional Assistance</p>
 							<p style="text-align: center; margin: 3px;">• Venue Liaison</p>
 							<p style="text-align: center; margin: 3px;">• Access to the property for photography</p>
 							<p style="text-align: center; margin: 3px;">• Gas Grill (Available for Rental)</p>
 							<p style="text-align: center; margin: 3px;">• Decor Package (Additional Fee Applies)</p>
 							<p style="text-align: center; margin: 3px;">• Enclosed Play Area for Children</p>
-						
+
+						</div>
+						<hr>
+						<div class="container">
+							<p style="text-align: center; font-size: x-large; letter-spacing: 3px;">Rehearsal Only</p>
+							<p style="text-align: center; margin: 3px">We do have the venue available for rehearsal
+								only.
+								This is subject to availability. Please <a href="contact.html"
+									style="color: tan;">contact
+									us</a> or reach out to us at 336-867-5309</p>
+						</div>
 					</div>
-					<hr>
-					<div class="container">
-						<p style="text-align: center; font-size: x-large; letter-spacing: 3px;">Rehearsal Only</p>
-						<p style="text-align: center; margin: 3px">We do have the venue available for rehearsal only.
-							This is subject to availability. Please <a href="contact.html" style="color: tan;">contact
-								us</a> or reach out to us at 336-867-5309</p>
-					</div>
+
 				</div>
 			</div>
 		</section>
@@ -147,6 +183,23 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/about.js"></script>
+	<script>
+		function onPageLoad() {
+			document.getElementById("wedding").checked = true;
+			if (document.getElementById('wedding').checked) {
+				document.getElementById('weddingpackage').style.visibility = 'visible';
+			}
+			else document.getElementById('weddingpackage').style.visibility = 'hidden';
+		}
+
+		function yesnoCheck() {
+			if (document.getElementById('wedding').checked) {
+				document.getElementById('weddingpackage').style.visibility = 'visible';
+			}
+			else document.getElementById('weddingpackage').style.visibility = 'hidden';
+
+		}
+	</script>
 </body>
 
 </html>
