@@ -275,19 +275,19 @@
      box-sizing: inherit;
 }
  body {
-     background-image: url("images/overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-     background-image: url("images/overlay.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-     background-image: url("images/overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-     background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
+     background-image: url("images/overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.829)), url("../../images/bg.jpg");
+     background-image: url("images/overlay.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.829)), url("../../images/bg.jpg");
+     background-image: url("images/overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.829)), url("../../images/bg.jpg");
+     background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.829)), url("../../images/bg.jpg");
      background-position: top left, bottom left, center center;
      background-size: auto, 100% 100%, cover;
      background-attachment: fixed;
-     background-repeat: repeat, no-repeat, auto;
+     background-repeat: no-repeat, no-repeat, no-repeat;
      position: relative;
      background-color: #150C07;
      line-height: 1.75em;
      overflow-x: hidden;
-     overflow-y: auto;
+     overflow-y: hidden;
 }
  body.is-preload *, body.is-preload *:before, body.is-preload *:after {
      -moz-animation: none !important;
@@ -308,7 +308,7 @@
      body {
          background-attachment: fixed;
          background-size: auto, 100% 100%, 250% auto;
-         background-repeat: repeat, no-repeat, no-repeat;
+         background-repeat: no-repeat, no-repeat, no-repeat;
          background-position: top left, bottom left, 50% 0%;
     }
 }
@@ -578,6 +578,7 @@
  #main .itemsContact > :last-child {
      border-right: solid 0px transparent;
 }
+
  #main .item {
      -moz-flex-grow: 0;
      -webkit-flex-grow: 0;
@@ -600,10 +601,37 @@
  #main .item.span-3 {
      width: 40em;
 }
+
+#main .video {
+	overflow: hidden;
+	-moz-flex-grow: 0;
+	-webkit-flex-grow: 0;
+	-ms-flex-grow: 0;
+	flex-grow: 0;
+	-moz-flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+	-ms-flex-shrink: 0;
+	flex-shrink: 0;
+	margin: 5px;
+	height: 16em;
+	box-shadow: 0 0 0 10px transparent;
+}
+
+#main .video.span-8 {
+	overflow: hidden;
+	height: calc(75vh - 70px);
+	background-color: transparent;
+	color: black;
+}
+
+#main .video > :last-child {
+	border-right: solid 10px transparent;
+}
+
  #main .item.span-10 {
      width: 90vw;
-     height: calc(75vh - 70px);
-     margin-top: 100px;
+	 height: calc(75vh - 70px);
+	 margin: 15px;
      background-color: white;
      color: black;
      overflow-y: auto;
