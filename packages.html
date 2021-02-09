@@ -11,7 +11,7 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
-	
+
 </head>
 
 <body class="is-preload" onload="onPageLoad()">
@@ -57,9 +57,11 @@
 
 							</div>
 							<div class="col">
-								Our goal at The Cadillac Ranch is to provide an amazing venue and unforgettable experience.
+								Our goal at The Cadillac Ranch is to provide an amazing venue and unforgettable
+								experience.
 								From the moment we speak to you, til the last guest leaves, we will go the extra mile to
-								ensure that you don't have to worry about sweating the small things or making sure everything is set.
+								ensure that you don't have to worry about sweating the small things or making sure
+								everything is set.
 								Should you have any questions about our packages, or our pricing, please don't hestitate
 								to <a href="contact.html" style="color: tan;">contact us</a> or reach out to us at
 								336-264-6610
@@ -73,18 +75,19 @@
 					</div>
 					<hr>
 					<div class="container" style="overflow-x: hidden;">
-					<ul class="segmented-control">
-						<li class="segmented-control__item">
-							<input class="segmented-control__input" type="radio" value="1" name="option" id="wedding"
-								onclick="yesnoCheck();" checked>
-							<label class="segmented-control__label" for="wedding">Wedding Packages</label>
-						</li>
-						<li class="segmented-control__item">
-							<input class="segmented-control__input" type="radio" value="2" name="option" id="option-2" onclick="yesnoCheck()">
-							<label class="segmented-control__label" for="option-2">Additional Packages</label>
-						</li>
-					</ul>
-				</div>
+						<ul class="segmented-control">
+							<li class="segmented-control__item">
+								<input class="segmented-control__input" type="radio" value="1" name="option"
+									id="wedding" onclick="yesnoCheck();" checked>
+								<label class="segmented-control__label" for="wedding">Wedding Packages</label>
+							</li>
+							<li class="segmented-control__item">
+								<input class="segmented-control__input" type="radio" value="2" name="option"
+									id="otherpackages" onclick="yesnoCheck();" checked>
+								<label class="segmented-control__label" for="otherpackages">Additional Packages</label>
+							</li>
+						</ul>
+					</div>
 					<div class="container" id="weddingpackage" style="visibility: hidden;">
 						<div class="container">
 
@@ -157,7 +160,9 @@
 									us</a> or reach out to us at 336-867-5309</p>
 						</div>
 					</div>
-
+					<div class="container" id="otherpackages" style="visibility: hidden;">
+						<p>Hello, world</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -188,15 +193,26 @@
 			document.getElementById("wedding").checked = true;
 			if (document.getElementById('wedding').checked) {
 				document.getElementById('weddingpackage').style.visibility = 'visible';
+				document.getElementById('otherpackages').style.visibility = 'hidden';
+
 			}
-			else document.getElementById('weddingpackage').style.visibility = 'hidden';
+			else if (document.getElementById("otherpackages").checked = true) {
+				// document.getElementById('weddingpackage').style.visibility = 'hidden';
+				// document.getElementById('otherpackages').style.visibility = 'visible';
+				print("hi");
+			}
 		}
 
 		function yesnoCheck() {
 			if (document.getElementById('wedding').checked) {
 				document.getElementById('weddingpackage').style.visibility = 'visible';
+				document.getElementById('otherpackages').style.visibility = 'hidden';
+
 			}
-			else document.getElementById('weddingpackage').style.visibility = 'hidden';
+			else if (document.getElementById('otherpackages').checked) {
+				document.getElementById('weddingpackage').style.visibility = 'hidden';
+				document.getElementById('otherpackages').style.visibility = 'visible';
+			}
 
 		}
 	</script>
