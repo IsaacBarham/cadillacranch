@@ -11,110 +11,161 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 </head>
 
 <body class="is-preload">
-	<nav role="navigation" style="position: sticky; z-index: 105010; padding-bottom: 1em;">
-		<div id="menuToggle">
-			<input type="checkbox" />
-			<span></span>
-			<span></span>
-			<span></span>
-			<ul id="menu">
-				<a href="#">
-					<li>Home</li>
-				</a>
-				<a href="about.html">
-					<li>About</li>
-				</a>
-				<a href="packages.html">
-					<li>Packages</li>
-				</a>
-				<a href="contact.html">
-					<li>Contact</li>
-				</a>
-				<a href="media.html">
-					<li>Media</li>
-				</a>
-				<a href="gallery.html">
-					<li>Gallery</li>
-				</a>
-			</ul>
+	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark scrolling-navbar">
+		<a class="navbar-brand" href="#">The Cadillac Ranch</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="about.html">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="gallery.html">Gallery</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="packages.html">Packages</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="contact.html">Contact</a>
+			  </li>
+
+		  </ul>
 		</div>
-	</nav>
-	<div id="wrapper">
-		<section id="main">
-			<div class="items">
-				<div class="item intro span-2">
-					<h1>The Cadillac Ranch</h1>
-					<p>Once in a while, right in the middle of an ordinary life, love gives us a fairy tale </p>
+	  </nav>
+	<div class="parallax">
+		<div class="container" id="galleryWrapper">
+			<p></p>
+
+		</div>
+		
+		
+		<div style="height:100vh;font-size:36px">
+			<div class="mouse_scroll">
+
+				<div class="mouse">
+					<div class="wheel"></div>
 				</div>
-				<article class="item thumb span-1">
-					<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-2">
-					<a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-1">
-					<a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-1">
-					<a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-3">
-					<a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-3">
-					<a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt=""></a>
-				</article>
+				<div>
+					<span class="m_scroll_arrows unu"></span>
+					<span class="m_scroll_arrows doi"></span>
+					<span class="m_scroll_arrows trei"></span>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper">
+			<div class="wrap">
+				<div class="gallery">
+					<figure class="gallery__item gallery__item--1">
+						<a href="#img1">
+							<img src="images/fulls/01.jpg" alt="01" class="gallery__img">
+						</a>
+						<div class="lightbox" id="img1">
+							<img src="images/fulls/01.jpg" alt="">
+							<a href="#_" class="btn-close">&times;</a>
+						</div>
+					</figure>
+	
+					<figure class="gallery__item gallery__item--2">
+						<a href="#img2">
+							<img src="images/fulls/02.jpg" alt="02" class="gallery__img">
+						</a>
+						<div class="lightbox" id="img2">
+							<img src="images/fulls/02.jpg" alt="">
+							<a href="#_" class="btn-close">&times;</a>
+						</div>
+					</figure>
+	
+					<figure class="gallery__item gallery__item--3">
+						<a href="#img3">
+							<img src="images/fulls/03.jpg" alt="03" class="gallery__img">
+						</a>
+						<div class="lightbox" id="img3">
+							<img src="images/fulls/03.jpg" alt="">
+							<a href="#_" class="btn-close">&times;</a>
+						</div>
+					</figure>
+	
+					<figure class="gallery__item gallery__item--4">
+						<a href="#img4">
+							<img src="images/fulls/04.jpg" alt="04" class="gallery__img">
+						</a>
+						<div class="lightbox" id="img4">
+							<img src="images/fulls/04.jpg" alt="">
+							<a href="#_" class="btn-close">&times;</a>
+						</div>
+					</figure>
+	
+					<figure class="gallery__item gallery__item--5">
+						<a href="#img5">
+							<img src="images/fulls/05.jpg" alt="05" class="gallery__img">
+						</a>
+						<div class="lightbox" id="img5">
+							<img src="images/fulls/05.jpg" alt="">
+							<a href="#_" class="btn-close">&times;</a>
+						</div>
+					</figure>
+	
+					<figure class="gallery__item gallery__item--6">
+						<a href="#img6">
+							<img src="images/fulls/06.jpg" alt="06" class="gallery__img">
+						</a>
+						<div class="lightbox" id="img6">
+							<img src="images/fulls/06.jpg" alt="">
+							<a href="#_" class="btn-close">&times;</a>
+						</div>
+					</figure>
+
+					<figure class="gallery__item gallery__item--7">
+						<a href="#img7">
+							<img src="images/fulls/07.jpg" alt="07" class="gallery__img">
+						</a>
+						<div class="lightbox" id="img7">
+							<img src="images/fulls/07.jpg" alt="">
+							<a href="#_" class="btn-close">&times;</a>
+						</div>
+					</figure>
+
+					<figure class="gallery__item gallery__item--8">
+						<a href="#img8">
+							<img src="images/fulls/08.jpg" alt="08" class="gallery__img">
+						</a>
+						<div class="lightbox" id="img8">
+							<img src="images/fulls/08.jpg" alt="">
+							<a href="#_" class="btn-close">&times;</a>
+						</div>
+					</figure>
+					<figure class="gallery__item gallery__item--9">
+						<a href="#img9">
+							<img src="images/fulls/09.jpg" alt="09" class="gallery__img">
+						</a>
+						<div class="lightbox" id="img9">
+							<img src="images/fulls/09.jpg" alt="">
+							<a href="#_" class="btn-close">&times;</a>
+						</div>
+					</figure>
+
 				
+
+					
+				</div>
 			</div>
-			<div class="items">
-				<article class="item thumb span-2">
-					<a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-2">
-					<a href="images/fulls/08.jpg" class="image"><img src="images/thumbs/08.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-1">
-					<a href="images/fulls/09.jpg" class="image"><img src="images/thumbs/09.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-2">
-					<a href="images/fulls/10.jpg" class="image"><img src="images/thumbs/10.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-2">
-					<a href="images/fulls/11.jpg" class="image"><img src="images/thumbs/11.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-1">
-					<a href="images/fulls/12.jpg" class="image"><img src="images/thumbs/12.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-1">
-					<a href="images/fulls/13.jpg" class="image"><img src="images/thumbs/13.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-1">
-					<a href="images/fulls/14.jpg" class="image"><img src="images/thumbs/14.jpg" alt=""></a>
-				</article>
-			</div>
-		</section>
-		<section id="footer">
-			<section>
-				<p>The Cadillac Ranch is a beautiful estate laid out on 62 pristine and luscious acres accompanied with
-					2 ponds that make the perfect back drop for any themed wedding.</p>
-			</section>
-			<section>
-				<ul class="icons">
-					<li><a href="https://www.facebook.com/cadillacranchvenue" class="icon brands fa-facebook-f"
-							target="_blank" rel="noopener noreferrer"><span class="label">Facebook</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; The Cadillac Ranch</li>
-				</ul>
-			</section>
-		</section>
+		</div>
 	</div>
+
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.poptrox.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>

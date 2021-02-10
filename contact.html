@@ -6,81 +6,73 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 </head>
 
 <body class="is-preload">
-	<nav role="navigation" style="position: sticky; z-index: 105010; padding-bottom: 1em;">
-		<div id="menuToggle">
-			<input type="checkbox" />
-			<span></span>
-			<span></span>
-			<span></span>
-			<ul id="menu">
-				<a href="index.html">
-					<li>Home</li>
-				</a>
-				<a href="about.html">
-					<li>About</li>
-				</a>
-				<a href="packages.html">
-					<li>Packages</li>
-				</a>
-				<a href="#">
-					<li>Contact</li>
-				</a>
-				<a href="media.html">
-					<li>Media</li>
-				</a>
-				<a href="gallery.html">
-					<li>Gallery</li>
-				</a>
-			</ul>
-		</div>
-	</nav>
-	<div id="wrapper">
-		<section id="main">
-			<div class="items">
-                <div class="item span-10">
-                  
-                    <form class="form">
-                        <h2 style="color: black; font-weight: bolder; border-bottom: 3px solid #78788c;">CONTACT US</h2>
-                        <p class="pform" type="Name:"><input placeholder="Write your name here..."></p>
-                        <p class="pform" type="Email:"><input placeholder="Let us know how to contact you back..."></p>
-                        <p class="pform" type="Message:"><input placeholder="What would you like to tell us..."></p>
-                        <button>Send Message</button>
-                        <div class="contactDiv">
-                          <span class="fa fa-envelope"></span>thecadillacranchvenue@gmail.com
-                          <br />
-                          <span class="fa fa-phone"></span> 3361234567
-                        </div>
-                      </form>
-                </div>
-            </div>
-		</section>
-		<section id="footer">
-			<section>
-				<p>The Cadillac Ranch is a beautiful estate laid out on 62 pristine and luscious acres accompanied with
-					2 ponds that make the perfect back drop for any themed wedding.</p>
-			</section>
-			<section>
-				<ul class="icons">
-					<li><a href="https://www.facebook.com/cadillacranchvenue" class="icon brands fa-facebook-f" target="_blank" rel="noopener noreferrer"><span class="label">Facebook</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; The Cadillac Ranch</li>
-				</ul>
-			</section>
-		</section>
-	</div>
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.poptrox.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/about.js"></script>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark scrolling-navbar">
+        <a class="navbar-brand" href="#">The Cadillac Ranch</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="packages.html">Packages</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Contact  <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="parallaxNoScroll">
+        <div id="galleryWrapper">
+            <section id="main" style="overflow: hidden;">
+                <div class="itemsContact">
+                    <div class="item span-10">
+                        <p class="weddingHeader"
+                            style="text-align: center; font-size: 72; margin-top: 25px; margin-bottom: 25px;">Contact
+                        </p>
+                        <form class="form">
+							<h2 style="color: black; font-weight: bolder; border-bottom: 3px solid #78788c;">CONTACT US</h2>
+							<p class="pform" type="Name:"><input placeholder="Write your name here..."></p>
+							<p class="pform" type="Email:"><input placeholder="Let us know how to contact you back..."></p>
+							<p class="pform" type="Message:"><input placeholder="What would you like to tell us..."></p>
+							<button>Send Message</button>
+							<div class="contactDiv">
+							  <span class="fa fa-envelope"></span>thecadillacranchvenue@gmail.com
+							  <br />
+							  <span class="fa fa-phone"></span> 3361234567
+							</div>
+						  </form>
+                    </div>
+            </section>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/about.js"></script>
+   
 </body>
 
 </html>

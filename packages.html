@@ -23,40 +23,41 @@
 
 </head>
 
-<body class="is-preload" onload="onPageLoad()">
-	<nav role="navigation" style="position: sticky; z-index: 105010; padding-bottom: 1em;">
-		<div id="menuToggle">
-			<input type="checkbox" />
-			<span></span>
-			<span></span>
-			<span></span>
-			<ul id="menu">
-				<a href="index.html">
-					<li>Home</li>
-				</a>
-				<a href="about.html">
-					<li>About</li>
-				</a>
-				<a href="#">
-					<li>Packages</li>
-				</a>
-				<a href="contact.html">
-					<li>Contact</li>
-				</a>
-				<a href="media.html">
-					<li>Media</li>
-				</a>
-				<a href="gallery.html">
-					<li>Gallery</li>
-				</a>
-			</ul>
-		</div>
-	</nav>
-	<div id="galleryWrapper">
-		<section id="main" style="overflow: hidden;">
-			<div class="items">
-				<div class="item span-10">
-					<p class="weddingHeader"
+<body class="is-preload">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark scrolling-navbar">
+        <a class="navbar-brand" href="#">The Cadillac Ranch</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item active">
+					<a class="nav-link" href="#">Packages <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="parallaxNoScroll">
+        <div id="galleryWrapper">
+            <section id="main" style="overflow: hidden;">
+                <div class="itemsContact">
+                    <div class="item span-10">
+						<p class="weddingHeader"
 						style="text-align: center; font-size: 72; margin-top: 25px; margin-bottom: 25px;">Packages
 					</p>
 					<div class="container" style="overflow: hidden">
@@ -206,64 +207,17 @@
 						</div>
 
 					</div>
-
-
-
-				</div>
-
-			</div>
-	</div>
-	</section>
-	<section id="footer">
-		<section>
-			<p>The Cadillac Ranch is a beautiful estate laid out on 62 pristine and luscious acres accompanied with
-				2 ponds that make the perfect back drop for any themed wedding.</p>
-		</section>
-		<section>
-			<ul class="icons">
-				<li><a href="https://www.facebook.com/cadillacranchvenue" class="icon brands fa-facebook-f"
-						target="_blank" rel="noopener noreferrer"><span class="label">Facebook</span></a></li>
-			</ul>
-			<ul class="copyright">
-				<li>&copy; The Cadillac Ranch</li>
-			</ul>
-		</section>
-	</section>
-	</div>
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.poptrox.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/about.js"></script>
-	<script>
-		function onPageLoad() {
-			document.getElementById("wedding").checked = true;
-			if (document.getElementById('wedding').checked) {
-				document.getElementById('weddingpackage').style.visibility = 'visible';
-				document.getElementById('otherpackages').style.visibility = 'hidden';
-
-			}
-			else if (document.getElementById("otherpackages").checked = true) {
-				// document.getElementById('weddingpackage').style.visibility = 'hidden';
-				// document.getElementById('otherpackages').style.visibility = 'visible';
-				print("hi");
-			}
-		}
-
-		function yesnoCheck() {
-			if (document.getElementById('wedding').checked) {
-				document.getElementById('weddingpackage').style.visibility = 'visible';
-				document.getElementById('otherpackages').style.visibility = 'hidden';
-
-			}
-			else if (document.getElementById('otherpackages').checked) {
-				document.getElementById('weddingpackage').style.visibility = 'hidden';
-				document.getElementById('otherpackages').style.visibility = 'visible';
-			}
-
-		}
-	</script>
+                    </div>
+            </section>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/about.js"></script>
+   
 </body>
 
 </html>
