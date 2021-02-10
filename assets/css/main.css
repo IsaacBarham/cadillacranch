@@ -1270,7 +1270,7 @@ figure {
 }
 
 .lightbox img {
-    max-width: 25%;
+    max-width: 55%;
     height: auto;
     margin: 0 auto;
     opacity: 0;
