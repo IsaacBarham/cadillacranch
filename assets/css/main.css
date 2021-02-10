@@ -217,7 +217,6 @@
     /* The image used */
      background-image: url('../../images/bg.jpg');
     /* Full height */
-    height: calc(100vh - 48px);
     /* Create the parallax scrolling effect */
      background-attachment: fixed;
      background-position: center;
