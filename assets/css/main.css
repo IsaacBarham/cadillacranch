@@ -450,6 +450,8 @@
 
  @media screen and (max-width: 1280px) {
     #parallax {
+        height: calc(100vh - 48px);
+
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -463,6 +465,8 @@
 }
  @media screen and (max-width: 736px) {
      #parallax {
+        height: calc(100vh - 48px);
+
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -479,6 +483,8 @@
 }
  @media screen and (max-width: 1680px) {
     #parallax {
+        height: calc(100vh - 48px);
+
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -491,6 +497,8 @@
 }
  @media screen and (max-width: 1280px) {
     #parallax {
+        height: calc(100vh - 48px);
+
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -503,6 +511,8 @@
 }
  @media screen and (max-width: 980px) {
     #parallax {
+        height: calc(100vh - 48px);
+
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
