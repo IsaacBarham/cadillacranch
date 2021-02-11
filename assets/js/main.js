@@ -1,9 +1,3 @@
-/*
-	Parallelism by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
-*/
-
 (function($) {
 
 	var	$window = $(window),
