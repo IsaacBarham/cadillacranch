@@ -449,12 +449,26 @@
 }
 
  @media screen and (max-width: 1280px) {
+    #parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+
      body {
          background-attachment: fixed;
          margin: 0;
     }
 }
  @media screen and (max-width: 736px) {
+     #parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+    
      body {
          background-attachment: fixed;
          background-size: cover;
@@ -464,16 +478,37 @@
     }
 }
  @media screen and (max-width: 1680px) {
+    #parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+
      body, input, select, textarea {
          font-size: 11pt;
     }
 }
  @media screen and (max-width: 1280px) {
+    #parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+
      body, input, select, textarea {
          font-size: 10pt;
     }
 }
  @media screen and (max-width: 980px) {
+    #parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+
      body, input, select, textarea {
          font-size: 11pt;
     }
