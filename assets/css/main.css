@@ -457,9 +457,13 @@
  @media screen and (max-width: 736px) {
      body {
          background-attachment: fixed;
-         background-size: auto, 100% 100%, 250% auto;
+         /* background-size: auto, 100% 100%, 250% auto; */
          background-repeat: no-repeat, no-repeat, no-repeat;
          background-position: top left, bottom left, 50% 0%;
+         -webkit-background-size: contain;
+         -moz-background-size: contain;
+         -o-background-size: contain;
+         background-size: contain;
     }
 }
  @media screen and (max-width: 1680px) {
