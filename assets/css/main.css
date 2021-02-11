@@ -449,7 +449,7 @@
 }
 
  @media screen and (max-width: 1280px) {
-    #parallax {
+    .parallax {
 
         background-attachment: scroll;
         background-position: center;
@@ -463,7 +463,7 @@
     }
 }
  @media screen and (max-width: 736px) {
-     #parallax {
+     .parallax {
 
         background-attachment: scroll;
         background-position: center;
@@ -480,7 +480,7 @@
     }
 }
  @media screen and (max-width: 1680px) {
-    #parallax {
+    .parallax {
 
         background-attachment: scroll;
         background-position: center;
@@ -493,7 +493,7 @@
     }
 }
  @media screen and (max-width: 1280px) {
-    #parallax {
+    .parallax {
 
         background-attachment: scroll;
         background-position: center;
@@ -506,7 +506,7 @@
     }
 }
  @media screen and (max-width: 980px) {
-    #parallax {
+    .parallax {
         height: calc(100vh - 48px);
 
         background-attachment: scroll;
