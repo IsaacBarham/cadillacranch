@@ -217,11 +217,11 @@
     /* The image used */
      background-image: url('../../images/bg.jpg');
 
-     height: auto;
+     height: calc(100vh - 48px);
      max-width: 100%;
 
     /* Create the parallax scrolling effect */
-     background-attachment: fixed;
+     background-attachment: scroll;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
