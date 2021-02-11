@@ -220,7 +220,7 @@
      height: calc(100vh - 48px);
 
     /* Create the parallax scrolling effect */
-     background-attachment: scroll;
+     background-attachment: fixed;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -231,7 +231,7 @@
     /* Set a specific height */
      height: calc(100vh - 48px);
     /* Create the parallax scrolling effect */
-     background-attachment: scroll;
+     background-attachment: fixed;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
