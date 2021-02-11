@@ -218,6 +218,7 @@
      background-image: url('../../images/bg.jpg');
 
      height: calc(100vh - 48px);
+     width: 99vw;
 
     /* Create the parallax scrolling effect */
      background-attachment: fixed;
