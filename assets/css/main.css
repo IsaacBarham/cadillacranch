@@ -324,8 +324,10 @@
      padding: 7px 7px;
 }
  .flex {
-     width: 400px;
-     height: 300px;
+     object-fit: cover;
+     justify-content: center;
+     width: 35%;
+     height: 250px;
      margin: 0;
      padding: 7px 7px;
      transition: all 0.5s;
