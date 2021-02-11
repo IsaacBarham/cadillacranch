@@ -1237,7 +1237,7 @@ figure {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 14;
-    grid-row-end: 19;
+    grid-row-end: 21;
 }
 
 .gallery__item--16 {
@@ -1250,8 +1250,8 @@ figure {
 .gallery__item--17 {
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 19;
-    grid-row-end: 25;
+    grid-row-start: 21;
+    grid-row-end: 27;
 }
 
 .gallery__item--18 {
@@ -1264,7 +1264,7 @@ figure {
 .gallery__item--20 {
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 25;
+    grid-row-start: 27;
     grid-row-end: 28;
 }
 
