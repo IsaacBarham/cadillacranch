@@ -263,7 +263,7 @@
 }
 
  .form {
-     height: 475px;
+     height: 450px;
      background: transparent;
      border-radius: 8px;
      padding: 20px 30px;
@@ -338,8 +338,8 @@
  .contactDiv {
      content: "Hi";
      position: absolute;
-     bottom: 0px;
-     right: -35px;
+     bottom: 50px;
+     right: 28px;
      background: #50505a;
      color: #fff;
      width: 320px;
