@@ -263,7 +263,7 @@
 }
 
  .form {
-     height: 450px;
+     height: 475px;
      background: transparent;
      border-radius: 8px;
      padding: 20px 30px;
@@ -338,8 +338,8 @@
  .contactDiv {
      content: "Hi";
      position: absolute;
-     bottom: 50px;
-     right: 28px;
+     bottom: 0px;
+     right: -35px;
      background: #50505a;
      color: #fff;
      width: 320px;
@@ -1163,21 +1163,12 @@ figure {
     }
 }
 
-@media (min-width: 768px) {
-.col-md-9 {
--ms-flex: 0 0 75%;
-flex: 0 0 75%;
-max-width: 75%;
-text-align: right;
-}
-
 .firstcharacter {
-    font-family: 'Raleway';
+    font-family: 'Raleway', cursive;
     float: left;
     font-size: 75px;
     line-height: 60px;
     padding-top: 4px;
-    padding-right: 15px;
   }
 
   
