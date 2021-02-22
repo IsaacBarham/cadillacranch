@@ -1163,6 +1163,25 @@ figure {
     }
 }
 
+@media (min-width: 768px) {
+.col-md-9 {
+-ms-flex: 0 0 75%;
+flex: 0 0 75%;
+max-width: 75%;
+text-align: right;
+}
+
+.firstcharacter {
+    font-family: 'Raleway';
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 15px;
+  }
+
+  
+
 .wrap {
     max-width: 960px;
     width: 100%;
