@@ -325,15 +325,14 @@
 }
  .flex {
      object-fit: cover;
+     height: 85%;
+     width: 85%;
      justify-content: center;
-     width: 35%;
-     height: 250px;
      margin: 0;
      padding: 7px 7px;
      transition: all 0.5s;
 }
  .flex:hover {
-     transform: scale(1.1);
 }
  .contactDiv {
      content: "Hi";
