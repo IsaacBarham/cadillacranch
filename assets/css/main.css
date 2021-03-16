@@ -12,6 +12,7 @@
      font-family: 'Open Sans', sans-serif;
      font-family: 'Raleway', cursive;
      vertical-align: baseline;
+
 }
  article, aside, details, figcaption, figure, footer, header, hgroup, menu, section {
      display: block;
@@ -231,7 +232,7 @@
     /* Set a specific height */
      height: calc(100vh - 48px);
     /* Create the parallax scrolling effect */
-     background-attachment: scroll;
+     background-attachment: fixed;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -471,8 +472,8 @@
     
      body {
          background-attachment: scroll;
-         background-size: cover;
-         background-repeat: no-repeat, no-repeat, no-repeat;
+         background-size: contain;
+         background-repeat: repeat, repeat, repeat;
          background-position: top left, bottom left, 50% 0%;
          
     }
@@ -485,10 +486,6 @@
         background-repeat: no-repeat;
         background-size: cover;
      }
-
-     body, input, select, textarea {
-         font-size: 11pt;
-    }
 }
  @media screen and (max-width: 1280px) {
     .parallax {
@@ -874,6 +871,16 @@
      color: black;
      overflow-y: auto;
 }
+
+#main .item.span-11 {
+    width: 65vw;
+    height: calc(97vh - 70px);
+    margin: 15px;
+    background-color: white;
+    color: black;
+    overflow-y: auto;
+}
+
  #main .item.moviespan-10 {
      width: 65vw;
      height: calc(75vh - 70px);
@@ -1177,12 +1184,20 @@ figure {
     margin: 0 auto;
 }
 
+.wrapHeader {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .gallery {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(35, 5vw);
     grid-gap: 15px;
     width: 100%;
-    padding-top: 60px;
+}
+.galleryHeader {
+    width: 100%;
 }
 
 .gallery__item--bg-1 {
@@ -1357,6 +1372,15 @@ figure {
     transition: .4s linear;
     transform: scale(1.2);
 }
+
+.galleryHeader__img:hover {
+    transition: .4s linear;
+}
+
+.galleryHeader__img {
+    scale: (1.2);
+}
+
 
 .lightbox {
     position: fixed;
