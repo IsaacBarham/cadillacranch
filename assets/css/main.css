@@ -249,6 +249,10 @@
 }
 
  .weddingHeader {
+     left: 0;
+     right: 0;
+     stroke: black;
+     position: absolute;
      text-align: center;
      font-family: 'Open Sans', sans-serif;
      font-family: 'Alex Brush', cursive;
@@ -1259,15 +1263,15 @@ figure {
 .gallery__item--8 {
     grid-column-start: 5;
     grid-column-end: 9;
-    grid-row-start: 18;
-    grid-row-end: 22;
+    grid-row-start: 15;
+    grid-row-end: 20;
 }
 
 .gallery__item--9 {
     grid-column-start: 5;
     grid-column-end: 9;
-    grid-row-start: 15;
-    grid-row-end: 18;
+    grid-row-start: 10;
+    grid-row-end: 15;
 }
 
 .gallery__item--10 {
@@ -1315,7 +1319,7 @@ figure {
 .gallery__item--16 {
     grid-column-start: 5;
     grid-column-end: 9;
-    grid-row-start: 22;
+    grid-row-start: 20;
     grid-row-end: 31;
 }
 
