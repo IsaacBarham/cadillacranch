@@ -1341,7 +1341,7 @@ figure {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 32;
-    grid-row-end: 36;
+    grid-row-end: 36    ;
 }
 
 
