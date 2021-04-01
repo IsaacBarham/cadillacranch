@@ -21,10 +21,10 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'tom@amazing-designs.com';//<== update the email address
-$email_subject = "New Form submission";
+$email_from = "contact@thecadillacranch.net";//<== update the email address
+$email_subject = "New Form Submission";
 $email_body = "You have received a new message from the user $name.\n".
-    "Here is the message:\n $message".
+    "Here is the message:\n $message\n".
     
 $to = "ihbarham1@yahoo.com";//<== update the email address
 $headers = "From: $email_from \r\n";
@@ -32,7 +32,7 @@ $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to thank-you page.
-header('Location: thank-you.html');
+header('Location: thankyou.html');
 
 
 // Function to validate against any email injection attempts
